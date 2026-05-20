@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/* ─── IFFAC V2.0 Design Tokens ─── */
+@theme {
+  --color-navy:        #0D1B2A;
+  --color-navy-mid:    #162536;
+  --color-navy-light:  #1E3245;
+  --color-cream:       #F5F0E8;
+  --color-cream-dark:  #EDE7DA;
+  --color-gold:        #B8902A;
+  --color-gold-light:  #D4A843;
+  --color-rust:        #C4581A;
+  --color-muted:       #8A9BB0;
+  --color-white:       #FFFFFF;
+
+  --font-display: var(--font-cormorant), Georgia, 'Times New Roman', serif;
+  --font-sans:    var(--font-dm-sans), system-ui, sans-serif;
+}
+
+/* ─── Base ─── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0D1B2A;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  background-color: #F5F0E8;
+  color: #0D1B2A;
+  cursor: none; /* hide default — custom cursor takes over on desktop */
+}
+
+@media (pointer: coarse) {
+  body { cursor: auto; }
+}
+
+img, video { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ─── Grain texture overlay ─── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: overlay;
+}
+
+/* ─── Button text safety net ─── */
+/* Ensures light text always renders on dark-background buttons regardless of cascade */
+a.text-white,
+button.text-white {
+  color: #ffffff !important;
+}
+
+/* ─── Focus ─── */
+:focus-visible {
+  outline: 2px solid #B8902A;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0D1B2A; }
+::-webkit-scrollbar-thumb { background: #B8902A; border-radius: 2px; }
+
+/* ─── Scroll reveal base ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1),
+              transform 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Diagonal section clip ─── */
+.clip-diagonal-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  margin-bottom: -3vw;
+  padding-bottom: calc(3vw + 5rem);
+}
+.clip-diagonal-top {
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -3vw;
+  padding-top: calc(3vw + 5rem);
+}
+
+/* ─── Gold pulse ─── */
+@keyframes gold-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.75; }
+}
+.gold-pulse { animation: gold-pulse 3s ease-in-out infinite; }
+
+/* ─── Marquee ─── */
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+.marquee-left  { animation: marquee-left  30s linear infinite; }
+.marquee-right { animation: marquee-right 40s linear infinite; }
+.marquee-left:hover,
+.marquee-right:hover { animation-play-state: paused; }
+
+/* ─── Reduced motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  body { cursor: auto; }
+}
