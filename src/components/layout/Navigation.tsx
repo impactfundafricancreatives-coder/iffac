@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
@@ -56,19 +57,23 @@ export function Navigation() {
           style={{ height: scrolled ? 64 : 80, transition: "height 0.4s ease" }}
         >
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group" aria-label="IFFAC home">
-            <span
-              className="font-display font-semibold tracking-tight text-white group-hover:text-[#B8902A] transition-colors duration-300"
-              style={{ fontSize: scrolled ? "1.4rem" : "1.7rem", transition: "font-size 0.4s ease" }}
-            >
-              IFFAC
-            </span>
-            <div className="hidden sm:flex flex-col border-l border-white/25 pl-3 gap-0.5">
-              <span className="text-[9px] font-bold tracking-[0.18em] uppercase text-white/60 leading-tight">
-                Impact Fund
+          <Link href="/" className="flex items-center gap-2 group" aria-label="IFFAC home">
+            <Image
+              src="/logo-icon.png"
+              alt="IFFAC"
+              width={scrolled ? 32 : 38}
+              height={scrolled ? 32 : 38}
+              className="transition-all duration-300 shrink-0"
+            />
+            <div className="flex flex-col">
+              <span
+                className="font-display font-bold tracking-tight text-white group-hover:text-[#B8902A] transition-colors duration-300 leading-none"
+                style={{ fontSize: scrolled ? "1.2rem" : "1.5rem", transition: "font-size 0.4s ease" }}
+              >
+                IFFAC
               </span>
-              <span className="text-[9px] font-bold tracking-[0.18em] uppercase text-white/60 leading-tight">
-                for African Creatives
+              <span className="hidden sm:block text-[8px] font-bold tracking-[0.15em] uppercase text-white/50 leading-tight mt-0.5">
+                Impact Fund for African Creatives
               </span>
             </div>
           </Link>

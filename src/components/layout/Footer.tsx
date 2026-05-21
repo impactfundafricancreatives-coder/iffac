@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { NewsletterForm } from "@/components/ui/NewsletterForm";
 
 const cols = [
@@ -70,9 +71,16 @@ export function Footer() {
 
             {/* Brand */}
             <div className="col-span-2 md:col-span-1">
-              <Link href="/" className="footer-logo font-display font-bold block mb-4 transition-colors duration-200"
-                style={{ color: "#F5F0E8", fontSize: "1.75rem" }}>
-                IFFAC
+              <Link href="/" className="footer-logo flex items-center gap-2 mb-4 group transition-opacity hover:opacity-80">
+                <Image src="/logo-icon.png" alt="IFFAC" width={36} height={36} className="shrink-0" />
+                <div className="flex flex-col">
+                  <span className="font-display font-bold leading-none" style={{ color: "#F5F0E8", fontSize: "1.4rem" }}>
+                    IFFAC
+                  </span>
+                  <span className="text-[8px] font-bold tracking-[0.15em] uppercase leading-tight mt-0.5" style={{ color: "#8A9BB0" }}>
+                    Impact Fund for African Creatives
+                  </span>
+                </div>
               </Link>
               <p style={{ color: "#C8C4BC" }} className="text-sm leading-relaxed mb-5 max-w-[200px]">
                 Africa&apos;s first patient-capital platform for the creative economy.
