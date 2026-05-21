@@ -79,7 +79,7 @@ export function CustomCursor() {
         className="fixed top-0 left-0 z-[9998] pointer-events-none"
         style={{
           width: 8, height: 8,
-          background: "#B8902A",
+          background: "#EA6B0E",
           borderRadius: "50%",
           marginLeft: -4, marginTop: -4,
           opacity: visible ? 1 : 0,
@@ -93,7 +93,7 @@ export function CustomCursor() {
         className="fixed top-0 left-0 z-[9997] pointer-events-none flex items-center justify-center"
         style={{
           width: 36, height: 36,
-          border: "1.5px solid rgba(184,144,42,0.5)",
+          border: "1.5px solid rgba(234,107,14,0.5)",
           borderRadius: "50%",
           marginLeft: -18, marginTop: -18,
           opacity: visible ? 1 : 0,
@@ -102,7 +102,7 @@ export function CustomCursor() {
         }}
       >
         {label && (
-          <span className="text-[#B8902A] text-[9px] font-bold tracking-wider uppercase whitespace-nowrap">
+          <span className="text-[#EA6B0E] text-[9px] font-bold tracking-wider uppercase whitespace-nowrap">
             {label}
           </span>
         )}
@@ -114,8 +114,8 @@ export function CustomCursor() {
           height: 64px !important;
           margin-left: -32px !important;
           margin-top: -32px !important;
-          border-color: rgba(184,144,42,0.8) !important;
-          background: rgba(184,144,42,0.06);
+          border-color: rgba(234,107,14,0.8) !important;
+          background: rgba(234,107,14,0.06);
         }
       `}</style>
     </>

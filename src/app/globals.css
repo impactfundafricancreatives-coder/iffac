@@ -1,17 +1,21 @@
 @import "tailwindcss";
 
-/* ─── IFFAC V2.0 Design Tokens ─── */
+/* ─── IFFAC Official Brand Color System ─── */
 @theme {
-  --color-navy:        #0D1B2A;
-  --color-navy-mid:    #162536;
-  --color-navy-light:  #1E3245;
-  --color-cream:       #F5F0E8;
-  --color-cream-dark:  #EDE7DA;
-  --color-gold:        #B8902A;
-  --color-gold-light:  #D4A843;
-  --color-rust:        #C4581A;
-  --color-muted:       #8A9BB0;
-  --color-white:       #FFFFFF;
+  /* Brand palette — from official style guide */
+  --color-orange:   #EA6B0E;   /* Confidence — primary */
+  --color-yellow:   #FFC200;   /* Creativity — secondary accent */
+  --color-green:    #0AA350;   /* Growth — supporting */
+  --color-blue:     #1B93DD;   /* Trust — supporting */
+  --color-black:    #1C1C1C;   /* Brand black */
+  --color-white:    #FFFFFF;
+
+  /* UI neutrals */
+  --color-gray-dark:  #333333;
+  --color-gray-mid:   #666666;
+  --color-gray-light: #AAAAAA;
+  --color-off-white:  #FAFAFA;
+  --color-light-gray: #F0F0F0;
 
   --font-display: var(--font-cormorant), Georgia, 'Times New Roman', serif;
   --font-sans:    var(--font-dm-sans), system-ui, sans-serif;
@@ -23,16 +27,16 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0D1B2A;
+  background-color: #1C1C1C;
 }
 
 body {
   font-family: var(--font-sans);
   font-size: 1.125rem;
   line-height: 1.7;
-  background-color: #F5F0E8;
-  color: #0D1B2A;
-  cursor: none; /* hide default — custom cursor takes over on desktop */
+  background-color: #FAFAFA;
+  color: #1C1C1C;
+  cursor: none;
 }
 
 @media (pointer: coarse) {
@@ -48,32 +52,25 @@ body::before {
   position: fixed;
   inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  opacity: 0.035;
+  opacity: 0.025;
   pointer-events: none;
   z-index: 9999;
   mix-blend-mode: overlay;
 }
 
-/* ─── Button text safety net ─── */
-/* Ensures light text always renders on dark-background buttons regardless of cascade */
-a.text-white,
-button.text-white {
-  color: #ffffff !important;
-}
-
 /* ─── Focus ─── */
 :focus-visible {
-  outline: 2px solid #B8902A;
+  outline: 2px solid #EA6B0E;
   outline-offset: 3px;
   border-radius: 2px;
 }
 
 /* ─── Scrollbar ─── */
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #0D1B2A; }
-::-webkit-scrollbar-thumb { background: #B8902A; border-radius: 2px; }
+::-webkit-scrollbar-track { background: #1C1C1C; }
+::-webkit-scrollbar-thumb { background: #EA6B0E; border-radius: 2px; }
 
-/* ─── Scroll reveal base ─── */
+/* ─── Scroll reveal ─── */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -85,7 +82,7 @@ button.text-white {
   transform: translateY(0);
 }
 
-/* ─── Diagonal section clip ─── */
+/* ─── Diagonal clip ─── */
 .clip-diagonal-bottom {
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
   margin-bottom: -3vw;
@@ -97,12 +94,12 @@ button.text-white {
   padding-top: calc(3vw + 5rem);
 }
 
-/* ─── Gold pulse ─── */
-@keyframes gold-pulse {
+/* ─── Orange pulse ─── */
+@keyframes orange-pulse {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.75; }
 }
-.gold-pulse { animation: gold-pulse 3s ease-in-out infinite; }
+.gold-pulse { animation: orange-pulse 3s ease-in-out infinite; }
 
 /* ─── Marquee ─── */
 @keyframes marquee-left {
@@ -117,6 +114,9 @@ button.text-white {
 .marquee-right { animation: marquee-right 40s linear infinite; }
 .marquee-left:hover,
 .marquee-right:hover { animation-play-state: paused; }
+
+/* ─── Button text safety ─── */
+a.text-white, button.text-white { color: #ffffff !important; }
 
 /* ─── Reduced motion ─── */
 @media (prefers-reduced-motion: reduce) {

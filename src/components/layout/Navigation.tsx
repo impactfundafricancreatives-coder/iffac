@@ -35,7 +35,7 @@ export function Navigation() {
       {/* Skip link */}
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-6 focus:z-[200] focus:bg-[#B8902A] focus:text-[#0D1B2A] focus:px-4 focus:py-2 focus:text-sm focus:font-bold"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-6 focus:z-[200] focus:bg-[#EA6B0E] focus:text-[#1C1C1C] focus:px-4 focus:py-2 focus:text-sm focus:font-bold"
       >
         Skip to content
       </a>
@@ -44,11 +44,11 @@ export function Navigation() {
         className="fixed top-0 inset-x-0 z-50 transition-all duration-500"
         style={{
           background: scrolled || open
-            ? "rgba(13,27,42,0.95)"
-            : "rgba(13,27,42,0.82)",
+            ? "rgba(28,28,28,0.95)"
+            : "rgba(28,28,28,0.82)",
           backdropFilter: "blur(16px)",
           borderBottom: scrolled
-            ? "1px solid rgba(184,144,42,0.2)"
+            ? "1px solid rgba(234,107,14,0.35)"
             : "1px solid rgba(255,255,255,0.06)",
         }}
       >
@@ -67,7 +67,7 @@ export function Navigation() {
             />
             <div className="flex flex-col">
               <span
-                className="font-display font-bold tracking-tight text-white group-hover:text-[#B8902A] transition-colors duration-300 leading-none"
+                className="font-display font-bold tracking-tight text-white group-hover:text-[#EA6B0E] transition-colors duration-300 leading-none"
                 style={{ fontSize: scrolled ? "1.2rem" : "1.5rem", transition: "font-size 0.4s ease" }}
               >
                 IFFAC
@@ -88,15 +88,15 @@ export function Navigation() {
                   href={l.href}
                   className="relative text-[11px] font-bold tracking-[0.1em] uppercase transition-colors duration-200 pb-0.5 whitespace-nowrap"
                   style={{
-                    color: active ? "#B8902A" : "#F5F0E8",
+                    color: active ? "#EA6B0E" : "#FAFAFA",
                     opacity: active ? 1 : 0.85,
                   }}
-                  onMouseEnter={(e) => { if (!active) (e.currentTarget as HTMLElement).style.color = "#B8902A"; }}
-                  onMouseLeave={(e) => { if (!active) (e.currentTarget as HTMLElement).style.color = "#F5F0E8"; }}
+                  onMouseEnter={(e) => { if (!active) (e.currentTarget as HTMLElement).style.color = "#EA6B0E"; }}
+                  onMouseLeave={(e) => { if (!active) (e.currentTarget as HTMLElement).style.color = "#FAFAFA"; }}
                 >
                   {l.label}
                   {active && (
-                    <span className="absolute -bottom-0.5 left-0 right-0 h-px bg-[#B8902A]" />
+                    <span className="absolute -bottom-0.5 left-0 right-0 h-px bg-[#EA6B0E]" />
                   )}
                 </Link>
               );
@@ -107,7 +107,7 @@ export function Navigation() {
           <div className="hidden lg:flex items-center">
             <Link
               href="/apply"
-              className="text-xs font-bold px-5 py-2.5 bg-[#B8902A] text-[#0D1B2A] hover:bg-[#D4A843] transition-colors duration-200 whitespace-nowrap"
+              className="text-xs font-bold px-5 py-2.5 bg-[#EA6B0E] text-[#1C1C1C] hover:bg-[#FF7A1A] transition-colors duration-200 whitespace-nowrap"
             >
               Apply Now
             </Link>
@@ -116,7 +116,7 @@ export function Navigation() {
           {/* Mobile burger */}
           <button
             onClick={() => setOpen((o) => !o)}
-            className="lg:hidden p-2 text-white hover:text-[#B8902A] transition-colors"
+            className="lg:hidden p-2 text-white hover:text-[#EA6B0E] transition-colors"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
           >
@@ -127,20 +127,20 @@ export function Navigation() {
 
       {/* Mobile overlay */}
       {open && (
-        <div className="fixed inset-0 z-40 lg:hidden" style={{ background: "#0D1B2A" }}>
+        <div className="fixed inset-0 z-40 lg:hidden" style={{ background: "#1C1C1C" }}>
           {/* Close tap area behind panel */}
           <div className="absolute inset-0" onClick={() => setOpen(false)} />
 
           <div
             className="absolute top-0 right-0 h-full w-[80vw] max-w-sm flex flex-col pt-24 px-8 pb-10"
-            style={{ background: "#0D1B2A", borderLeft: "1px solid rgba(184,144,42,0.2)" }}
+            style={{ background: "#1C1C1C", borderLeft: "1px solid rgba(234,107,14,0.2)" }}
           >
             <nav className="flex flex-col">
               {links.map((l, i) => (
                 <Link
                   key={l.href}
                   href={l.href}
-                  className="border-b border-white/8 py-5 font-display text-3xl font-medium text-white hover:text-[#B8902A] transition-colors"
+                  className="border-b border-white/8 py-5 font-display text-3xl font-medium text-white hover:text-[#EA6B0E] transition-colors"
                   style={{ animationDelay: `${i * 60}ms` }}
                 >
                   {l.label}
@@ -149,7 +149,7 @@ export function Navigation() {
             </nav>
             <Link
               href="/apply"
-              className="mt-auto inline-flex items-center justify-center bg-[#B8902A] text-[#0D1B2A] text-sm font-bold px-6 py-4 hover:bg-[#D4A843] transition-colors"
+              className="mt-auto inline-flex items-center justify-center bg-[#EA6B0E] text-[#1C1C1C] text-sm font-bold px-6 py-4 hover:bg-[#FF7A1A] transition-colors"
             >
               Apply for Funding →
             </Link>

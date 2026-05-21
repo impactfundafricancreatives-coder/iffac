@@ -9,7 +9,7 @@ export function PartnerMarquee() {
 
   return (
     <section
-      className="py-16 bg-[#F4EFE6] border-y border-[#A8A39A]/20 overflow-hidden"
+      className="py-16 bg-[#FAFAFA] border-y border-[#888888]/20 overflow-hidden"
       aria-label="Strategic partners"
     >
       <div className="container-content mb-8">
@@ -25,7 +25,7 @@ export function PartnerMarquee() {
           {allPartners.map((partner, i) => (
             <span
               key={`${partner.name}-${i}`}
-              className="font-ui font-semibold text-sm tracking-wide text-[#A8A39A] hover:text-[#0B1B2B] transition-colors duration-300 cursor-default select-none px-2 shrink-0"
+              className="font-ui font-semibold text-sm tracking-wide text-[#888888] hover:text-[#1C1C1C] transition-colors duration-300 cursor-default select-none px-2 shrink-0"
             >
               {partner.name}
             </span>

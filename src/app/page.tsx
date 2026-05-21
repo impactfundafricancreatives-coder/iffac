@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 const stages = [
-  { n: "01", title: "Incubation",     range: "€5K – €10K",    duration: "6–9 months",     accent: "#C4581A", body: "Structured programs with sub-sector specialists, capacity building, mentorship, and financial support for early-stage creative ventures." },
-  { n: "02", title: "Acceleration",   range: "€50K – €250K",  duration: "Ongoing support", accent: "#8A9BB0", body: "Grants that drive expansion, sustainability, and global reach. Prepares ventures for seed-stage investment and international markets." },
-  { n: "03", title: "Seed Financing", range: "Up to €2M",     duration: "Patient capital", accent: "#B8902A", body: "Patient capital for investment-ready ventures, equity or convertible debt, with continued technical assistance at every stage of growth." },
+  { n: "01", title: "Incubation",     range: "€5K – €10K",    duration: "6–9 months",     accent: "#FFC200", body: "Structured programs with sub-sector specialists, capacity building, mentorship, and financial support for early-stage creative ventures." },
+  { n: "02", title: "Acceleration",   range: "€50K – €250K",  duration: "Ongoing support", accent: "#888888", body: "Grants that drive expansion, sustainability, and global reach. Prepares ventures for seed-stage investment and international markets." },
+  { n: "03", title: "Seed Financing", range: "Up to €2M",     duration: "Patient capital", accent: "#EA6B0E", body: "Patient capital for investment-ready ventures, equity or convertible debt, with continued technical assistance at every stage of growth." },
 ];
 
 const portfolio = [
@@ -44,27 +44,27 @@ export default function HomePage() {
       <HeroSection />
 
       {/* ── MISSION ── (cream, clip-diagonal-top) */}
-      <section className="bg-[#F5F0E8] clip-diagonal-top py-24 md:py-36 px-6 md:px-12 lg:px-20">
+      <section className="bg-[#FAFAFA] clip-diagonal-top py-24 md:py-36 px-6 md:px-12 lg:px-20">
         <div className="max-w-[1440px] mx-auto">
           <AnimatedSection className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" stagger>
             <div>
-              <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-6">Our Mission</p>
-              <h2 className="font-display text-[#0D1B2A] font-medium leading-[1.08] tracking-tight" style={{ fontSize: "clamp(2.5rem,5vw,5rem)" }}>
+              <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-6">Our Mission</p>
+              <h2 className="font-display text-[#1C1C1C] font-medium leading-[1.08] tracking-tight" style={{ fontSize: "clamp(2.5rem,5vw,5rem)" }}>
                 Africa's first patient-capital platform for the creative economy.
               </h2>
             </div>
             <div className="space-y-5">
-              <p className="text-[#0D1B2A]/70 text-lg leading-relaxed">
+              <p className="text-[#1C1C1C]/70 text-lg leading-relaxed">
                 IFFAC is a US$150M fund that backs visionary African entrepreneurs across 16
                 creative sub-sectors, providing capital, technical support, and global market
                 access at every stage of growth.
               </p>
-              <p className="text-[#0D1B2A]/60 text-base leading-relaxed">
-                Founded by <strong className="text-[#0D1B2A] font-semibold">Roberta Annan</strong>,
+              <p className="text-[#1C1C1C]/60 text-base leading-relaxed">
+                Founded by <strong className="text-[#1C1C1C] font-semibold">Roberta Annan</strong>,
                 UNEP Goodwill Ambassador for the Creative Economy and founder of the African
                 Fashion Foundation, IFFAC is built for scale.
               </p>
-              <Link href="/about" className="inline-flex items-center text-[#0D1B2A] text-sm font-bold hover:text-[#B8902A] transition-colors gap-1 hover:gap-2">
+              <Link href="/about" className="inline-flex items-center text-[#1C1C1C] text-sm font-bold hover:text-[#EA6B0E] transition-colors gap-1 hover:gap-2">
                 Our story →
               </Link>
             </div>
@@ -73,10 +73,10 @@ export default function HomePage() {
       </section>
 
       {/* ── THREE STAGES ── (navy, clip-diagonal-bottom) */}
-      <section className="bg-[#0D1B2A] clip-diagonal-bottom px-6 md:px-12 lg:px-20">
+      <section className="bg-[#1C1C1C] clip-diagonal-bottom px-6 md:px-12 lg:px-20">
         <div className="max-w-[1440px] mx-auto">
           <AnimatedSection className="mb-16">
-            <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Programs</p>
+            <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">Programs</p>
             <h2 className="font-display text-white font-medium leading-snug" style={{ fontSize: "clamp(2.5rem,5vw,4.5rem)" }}>
               Three stages. One ladder to scale.
             </h2>
@@ -88,7 +88,7 @@ export default function HomePage() {
                 key={s.n}
                 href="/programs"
                 data-cursor="Explore"
-                className="group relative bg-[#0D1B2A] p-10 flex flex-col gap-5 overflow-hidden
+                className="group relative bg-[#1C1C1C] p-10 flex flex-col gap-5 overflow-hidden
                   hover:-translate-y-2 transition-all duration-[350ms] ease-[cubic-bezier(0.16,1,0.3,1)]
                   hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
               >
@@ -119,10 +119,10 @@ export default function HomePage() {
 
                 <div>
                   <p className="font-display font-medium text-3xl" style={{ color: s.accent }}>{s.range}</p>
-                  <p className="text-[#C8C4BC] text-xs mt-1">{s.duration}</p>
+                  <p className="text-[#AAAAAA] text-xs mt-1">{s.duration}</p>
                 </div>
 
-                <p className="text-[#C8C4BC] text-sm leading-relaxed flex-1">{s.body}</p>
+                <p className="text-[#AAAAAA] text-sm leading-relaxed flex-1">{s.body}</p>
 
                 <p className="text-xs font-bold tracking-wide transition-all duration-200 group-hover:translate-x-1" style={{ color: s.accent }}>
                   Learn more →
@@ -131,24 +131,24 @@ export default function HomePage() {
             ))}
           </AnimatedSection>
 
-          <p className="mt-8 text-[#C8C4BC] text-sm pb-20">
+          <p className="mt-8 text-[#AAAAAA] text-sm pb-20">
             All programs combine capital + capability + connections. Enter at any stage.
           </p>
         </div>
       </section>
 
       {/* ── IMPACT STATS ── (cream) */}
-      <section className="bg-[#F5F0E8] clip-diagonal-top py-24 md:py-32 px-6 md:px-12 lg:px-20">
+      <section className="bg-[#FAFAFA] clip-diagonal-top py-24 md:py-32 px-6 md:px-12 lg:px-20">
         <div className="max-w-[1440px] mx-auto">
           <AnimatedSection className="mb-16">
-            <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Impact</p>
-            <h2 className="font-display text-[#0D1B2A] font-medium" style={{ fontSize: "clamp(2.5rem,5vw,4.5rem)" }}>
+            <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">Impact</p>
+            <h2 className="font-display text-[#1C1C1C] font-medium" style={{ fontSize: "clamp(2.5rem,5vw,4.5rem)" }}>
               The receipts.
             </h2>
           </AnimatedSection>
           <StatsCounter />
           <AnimatedSection className="mt-8">
-            <Link href="/impact" className="text-[#C8C4BC] text-sm hover:text-[#0D1B2A] transition-colors">
+            <Link href="/impact" className="text-[#AAAAAA] text-sm hover:text-[#1C1C1C] transition-colors">
               Full impact dashboard →
             </Link>
           </AnimatedSection>
@@ -156,42 +156,42 @@ export default function HomePage() {
       </section>
 
       {/* ── PORTFOLIO ── (cream-dark) */}
-      <section className="bg-[#EDE7DA] py-24 md:py-32 px-6 md:px-12 lg:px-20">
+      <section className="bg-[#F0F0F0] py-24 md:py-32 px-6 md:px-12 lg:px-20">
         <div className="max-w-[1440px] mx-auto">
           <AnimatedSection className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
             <div>
-              <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Portfolio</p>
-              <h2 className="font-display text-[#0D1B2A] font-medium" style={{ fontSize: "clamp(2.5rem,5vw,4.5rem)" }}>
+              <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">Portfolio</p>
+              <h2 className="font-display text-[#1C1C1C] font-medium" style={{ fontSize: "clamp(2.5rem,5vw,4.5rem)" }}>
                 The brands. The makers.
               </h2>
             </div>
-            <Link href="/portfolio" className="shrink-0 border border-[#0D1B2A] text-[#0D1B2A] text-xs font-bold px-6 py-3 hover:bg-[#0D1B2A] hover:text-white transition-colors">
+            <Link href="/portfolio" className="shrink-0 border border-[#1C1C1C] text-[#1C1C1C] text-xs font-bold px-6 py-3 hover:bg-[#1C1C1C] hover:text-white transition-colors">
               See all brands →
             </Link>
           </AnimatedSection>
 
-          <AnimatedSection className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#0D1B2A]/10" stagger>
+          <AnimatedSection className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1C1C1C]/10" stagger>
             {portfolio.map((b) => (
               <Link
                 key={b.name}
                 href="/portfolio"
                 data-cursor="View →"
-                className="group bg-[#EDE7DA] p-8 hover:bg-[#0D1B2A] transition-colors duration-500 flex flex-col gap-4"
+                className="group bg-[#F0F0F0] p-8 hover:bg-[#1C1C1C] transition-colors duration-500 flex flex-col gap-4"
               >
-                <div className="w-14 h-14 rounded-full bg-[#0D1B2A] group-hover:bg-[#B8902A] flex items-center justify-center transition-colors duration-500">
-                  <span className="font-display text-white group-hover:text-[#0D1B2A] text-xl font-medium transition-colors duration-500">
+                <div className="w-14 h-14 rounded-full bg-[#1C1C1C] group-hover:bg-[#EA6B0E] flex items-center justify-center transition-colors duration-500">
+                  <span className="font-display text-white group-hover:text-[#1C1C1C] text-xl font-medium transition-colors duration-500">
                     {b.i}
                   </span>
                 </div>
                 <div>
-                  <p className="text-xs font-bold tracking-[0.12em] uppercase text-[#C4581A] group-hover:text-[#B8902A] transition-colors duration-300 mb-1">
+                  <p className="text-xs font-bold tracking-[0.12em] uppercase text-[#FFC200] group-hover:text-[#EA6B0E] transition-colors duration-300 mb-1">
                     {b.discipline} · {b.country}
                   </p>
-                  <p className="font-display text-[#0D1B2A] group-hover:text-white text-xl font-medium transition-colors duration-300">
+                  <p className="font-display text-[#1C1C1C] group-hover:text-white text-xl font-medium transition-colors duration-300">
                     {b.name}
                   </p>
                 </div>
-                <span className="text-[#C8C4BC] text-xs border border-[#0D1B2A]/20 group-hover:border-white/20 px-2.5 py-0.5 self-start transition-colors duration-300">
+                <span className="text-[#AAAAAA] text-xs border border-[#1C1C1C]/20 group-hover:border-white/20 px-2.5 py-0.5 self-start transition-colors duration-300">
                   {b.stage}
                 </span>
               </Link>
@@ -201,7 +201,7 @@ export default function HomePage() {
       </section>
 
       {/* ── WHO WE SERVE ── (navy) */}
-      <section className="bg-[#0D1B2A] clip-diagonal-top py-24 md:py-32 px-6 md:px-12 lg:px-20">
+      <section className="bg-[#1C1C1C] clip-diagonal-top py-24 md:py-32 px-6 md:px-12 lg:px-20">
         <div className="max-w-[1440px] mx-auto">
           <AnimatedSection className="mb-14">
             <h2 className="font-display text-white font-medium" style={{ fontSize: "clamp(2.5rem,5vw,4.5rem)" }}>
@@ -216,22 +216,22 @@ export default function HomePage() {
                 body: "The only fund that understands what you build. Apply for up to €2M, and a partner who speaks your language.",
                 cta:  "Apply for funding →",
                 href: "/apply",
-                bg:   "bg-[#0D1B2A]",
+                bg:   "bg-[#1C1C1C]",
               },
               {
                 tag:  "For Investors",
                 body: "Africa's creative economy is a US$60B+ opportunity with DFI-grade governance, AIF structure, and a clear return pathway.",
                 cta:  "Investor overview →",
                 href: "/investors",
-                bg:   "bg-[#162536]",
+                bg:   "bg-[#252525]",
               },
             ].map((c) => (
               <div key={c.tag} className={`${c.bg} p-12 md:p-16 flex flex-col gap-6`}>
-                <p className="text-[#B8902A] text-xs font-bold tracking-[0.2em] uppercase">{c.tag}</p>
+                <p className="text-[#EA6B0E] text-xs font-bold tracking-[0.2em] uppercase">{c.tag}</p>
                 <p className="text-white text-xl md:text-2xl leading-relaxed flex-1">{c.body}</p>
                 <Link
                   href={c.href}
-                  className="self-start inline-flex items-center bg-[#B8902A] text-[#0D1B2A] text-sm font-bold px-7 py-3.5 hover:bg-[#D4A843] transition-colors"
+                  className="self-start inline-flex items-center bg-[#EA6B0E] text-[#1C1C1C] text-sm font-bold px-7 py-3.5 hover:bg-[#FF7A1A] transition-colors"
                 >
                   {c.cta}
                 </Link>
@@ -242,37 +242,37 @@ export default function HomePage() {
       </section>
 
       {/* ── STORIES ── (cream) */}
-      <section className="bg-[#F5F0E8] clip-diagonal-top py-24 md:py-32 px-6 md:px-12 lg:px-20">
+      <section className="bg-[#FAFAFA] clip-diagonal-top py-24 md:py-32 px-6 md:px-12 lg:px-20">
         <div className="max-w-[1440px] mx-auto">
           <AnimatedSection className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
             <div>
-              <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Stories</p>
-              <h2 className="font-display text-[#0D1B2A] font-medium" style={{ fontSize: "clamp(2.5rem,5vw,4.5rem)" }}>
+              <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">Stories</p>
+              <h2 className="font-display text-[#1C1C1C] font-medium" style={{ fontSize: "clamp(2.5rem,5vw,4.5rem)" }}>
                 From the studios, sets, and looms.
               </h2>
             </div>
-            <Link href="/stories" className="shrink-0 text-[#0D1B2A] text-sm font-bold hover:text-[#B8902A] transition-colors">
+            <Link href="/stories" className="shrink-0 text-[#1C1C1C] text-sm font-bold hover:text-[#EA6B0E] transition-colors">
               Read all stories →
             </Link>
           </AnimatedSection>
 
-          <AnimatedSection className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#0D1B2A]/10" stagger>
+          <AnimatedSection className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#1C1C1C]/10" stagger>
             {stories.map((s) => (
               <Link
                 key={s.href}
                 href={s.href}
                 data-cursor="Read →"
-                className="group bg-[#F5F0E8] p-8 hover:bg-[#0D1B2A] transition-colors duration-500 flex flex-col gap-5"
+                className="group bg-[#FAFAFA] p-8 hover:bg-[#1C1C1C] transition-colors duration-500 flex flex-col gap-5"
               >
-                <div className="aspect-video bg-[#0D1B2A]/8 group-hover:bg-[#162536] transition-colors duration-500" />
+                <div className="aspect-video bg-[#1C1C1C]/8 group-hover:bg-[#252525] transition-colors duration-500" />
                 <div className="flex-1 flex flex-col gap-3">
-                  <p className="text-[#C4581A] group-hover:text-[#B8902A] text-xs font-bold tracking-[0.12em] uppercase transition-colors duration-300">
+                  <p className="text-[#FFC200] group-hover:text-[#EA6B0E] text-xs font-bold tracking-[0.12em] uppercase transition-colors duration-300">
                     {s.category} · {s.time}
                   </p>
-                  <h3 className="font-display text-[#0D1B2A] group-hover:text-white text-xl font-medium leading-snug transition-colors duration-300 flex-1">
+                  <h3 className="font-display text-[#1C1C1C] group-hover:text-white text-xl font-medium leading-snug transition-colors duration-300 flex-1">
                     {s.title}
                   </h3>
-                  <p className="text-[#C8C4BC] text-xs">{s.date}</p>
+                  <p className="text-[#AAAAAA] text-xs">{s.date}</p>
                 </div>
               </Link>
             ))}
@@ -281,15 +281,15 @@ export default function HomePage() {
       </section>
 
       {/* ── PARTNERS MARQUEE ── (cream-dark) */}
-      <section className="bg-[#EDE7DA] py-16 overflow-hidden border-y border-[#0D1B2A]/10">
-        <p className="text-center text-[#C8C4BC] text-xs font-bold tracking-[0.2em] uppercase mb-10 px-6">
+      <section className="bg-[#F0F0F0] py-16 overflow-hidden border-y border-[#1C1C1C]/10">
+        <p className="text-center text-[#AAAAAA] text-xs font-bold tracking-[0.2em] uppercase mb-10 px-6">
           Strategic Partners
         </p>
         {/* Row 1, left */}
         <div className="flex items-center gap-12 whitespace-nowrap mb-4">
           <div className="flex items-center gap-12 marquee-left">
             {[...partners, ...partners].map((p, i) => (
-              <span key={i} className="shrink-0 text-[#C8C4BC] hover:text-[#0D1B2A] text-sm font-bold tracking-wide transition-colors cursor-default">
+              <span key={i} className="shrink-0 text-[#AAAAAA] hover:text-[#1C1C1C] text-sm font-bold tracking-wide transition-colors cursor-default">
                 {p}
               </span>
             ))}
@@ -299,7 +299,7 @@ export default function HomePage() {
         <div className="flex items-center gap-12 whitespace-nowrap">
           <div className="flex items-center gap-12 marquee-right">
             {[...partners, ...partners].map((p, i) => (
-              <span key={i} className="shrink-0 text-[#0D1B2A]/20 text-sm font-bold tracking-wide cursor-default">
+              <span key={i} className="shrink-0 text-[#1C1C1C]/20 text-sm font-bold tracking-wide cursor-default">
                 {p}
               </span>
             ))}
@@ -308,14 +308,14 @@ export default function HomePage() {
       </section>
 
       {/* ── NEWSLETTER ── (navy) */}
-      <section className="bg-[#0D1B2A] clip-diagonal-top py-24 md:py-32 px-6 md:px-12 lg:px-20">
+      <section className="bg-[#1C1C1C] clip-diagonal-top py-24 md:py-32 px-6 md:px-12 lg:px-20">
         <div className="max-w-2xl mx-auto text-center">
           <AnimatedSection>
-            <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-6">The IFFAC Journal</p>
+            <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-6">The IFFAC Journal</p>
             <h2 className="font-display text-white font-medium mb-4" style={{ fontSize: "clamp(2.5rem,5vw,4rem)" }}>
               One email a month.
             </h2>
-            <p className="text-[#C8C4BC] text-lg mb-10">
+            <p className="text-[#AAAAAA] text-lg mb-10">
               Stories, open calls, and the work shaping Africa&apos;s creative economy.
             </p>
             <NewsletterForm dark />

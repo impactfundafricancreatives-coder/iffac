@@ -86,17 +86,17 @@ const ecosystem = [
 
 export default function PartnersPage() {
   return (
-    <div style={{ background: "#F5F0E8" }}>
+    <div style={{ background: "#FAFAFA" }}>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-28 px-6 md:px-12 lg:px-20" style={{ background: "#0D1B2A" }}>
+      <section className="pt-32 pb-20 md:pt-40 md:pb-28 px-6 md:px-12 lg:px-20" style={{ background: "#1C1C1C" }}>
         <div className="max-w-[1440px] mx-auto">
-          <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-6">Partners</p>
+          <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-6">Partners</p>
           <h1 className="font-display text-white font-medium leading-[1.05] tracking-tight max-w-3xl mb-8"
             style={{ fontSize: "clamp(3rem,6vw,6rem)" }}>
             We don&apos;t build alone.
           </h1>
-          <p className="text-[#C8C4BC] max-w-2xl" style={{ fontSize: "1.2rem", lineHeight: 1.7 }}>
+          <p className="text-[#AAAAAA] max-w-2xl" style={{ fontSize: "1.2rem", lineHeight: 1.7 }}>
             IFFAC operates through an institutional network of finance, legal, and ecosystem partners
             who share our commitment to building sustainable creative enterprises across Africa.
           </p>
@@ -104,27 +104,27 @@ export default function PartnersPage() {
       </section>
 
       {/* Core partners grid */}
-      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#0D1B2A]/10">
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#1C1C1C]/10">
         <div className="max-w-[1440px] mx-auto">
-          <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-12">Institutional Partners</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-[#0D1B2A]/10">
+          <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-12">Institutional Partners</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-[#1C1C1C]/10">
             {partners.map((p) => (
-              <div key={p.name} style={{ background: "#F5F0E8" }}
-                className="p-8 flex flex-col gap-4 hover:bg-[#EDE7DA] transition-colors group">
+              <div key={p.name} style={{ background: "#FAFAFA" }}
+                className="p-8 flex flex-col gap-4 hover:bg-[#F0F0F0] transition-colors group">
                 {/* Monogram */}
-                <div className="w-14 h-14 bg-[#0D1B2A] group-hover:bg-[#B8902A] flex items-center justify-center transition-colors duration-300">
-                  <span className="font-display text-white group-hover:text-[#0D1B2A] text-lg font-semibold transition-colors duration-300">
+                <div className="w-14 h-14 bg-[#1C1C1C] group-hover:bg-[#EA6B0E] flex items-center justify-center transition-colors duration-300">
+                  <span className="font-display text-white group-hover:text-[#1C1C1C] text-lg font-semibold transition-colors duration-300">
                     {p.shortName}
                   </span>
                 </div>
 
                 <div>
-                  <p className="text-[#B8902A] text-xs font-bold tracking-[0.12em] uppercase mb-1">{p.category}</p>
-                  <p className="font-display text-[#0D1B2A] text-xl font-medium">{p.name}</p>
-                  <p className="text-[#C8C4BC] text-xs mt-1">{p.location}</p>
+                  <p className="text-[#EA6B0E] text-xs font-bold tracking-[0.12em] uppercase mb-1">{p.category}</p>
+                  <p className="font-display text-[#1C1C1C] text-xl font-medium">{p.name}</p>
+                  <p className="text-[#AAAAAA] text-xs mt-1">{p.location}</p>
                 </div>
 
-                <p className="text-[#0D1B2A]/60 text-sm leading-relaxed flex-1">{p.description}</p>
+                <p className="text-[#1C1C1C]/60 text-sm leading-relaxed flex-1">{p.description}</p>
               </div>
             ))}
           </div>
@@ -132,27 +132,27 @@ export default function PartnersPage() {
       </section>
 
       {/* Ecosystem partners */}
-      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#0D1B2A]/10" style={{ background: "#EDE7DA" }}>
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#1C1C1C]/10" style={{ background: "#F0F0F0" }}>
         <div className="max-w-[1440px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Ecosystem Partners</p>
-              <h2 className="font-display text-[#0D1B2A] font-medium leading-snug mb-5"
+              <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">Ecosystem Partners</p>
+              <h2 className="font-display text-[#1C1C1C] font-medium leading-snug mb-5"
                 style={{ fontSize: "clamp(1.8rem,3vw,3rem)" }}>
                 The broader ecosystem we build with.
               </h2>
-              <p className="text-[#0D1B2A]/60 text-base leading-relaxed">
+              <p className="text-[#1C1C1C]/60 text-base leading-relaxed">
                 Beyond our institutional partners, IFFAC collaborates with a network of
                 multilateral organisations, creative foundations, and programme co-deliverers
                 who extend the fund's reach across the continent.
               </p>
             </div>
-            <div className="flex flex-col gap-px bg-[#0D1B2A]/10">
+            <div className="flex flex-col gap-px bg-[#1C1C1C]/10">
               {ecosystem.map((e) => (
-                <div key={e.name} style={{ background: "#EDE7DA" }}
-                  className="flex items-start justify-between gap-6 p-6 hover:bg-[#F5F0E8] transition-colors">
-                  <p className="font-display text-[#0D1B2A] text-lg font-medium">{e.name}</p>
-                  <p className="text-[#C8C4BC] text-sm text-right shrink-0 max-w-[200px] leading-snug">{e.role}</p>
+                <div key={e.name} style={{ background: "#F0F0F0" }}
+                  className="flex items-start justify-between gap-6 p-6 hover:bg-[#FAFAFA] transition-colors">
+                  <p className="font-display text-[#1C1C1C] text-lg font-medium">{e.name}</p>
+                  <p className="text-[#AAAAAA] text-sm text-right shrink-0 max-w-[200px] leading-snug">{e.role}</p>
                 </div>
               ))}
             </div>
@@ -161,15 +161,15 @@ export default function PartnersPage() {
       </section>
 
       {/* Become a partner */}
-      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20" style={{ background: "#0D1B2A" }}>
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20" style={{ background: "#1C1C1C" }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-[#B8902A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Partner with IFFAC</p>
+            <p className="text-[#EA6B0E] text-xs font-bold tracking-[0.2em] uppercase mb-5">Partner with IFFAC</p>
             <h2 className="font-display text-white font-medium leading-snug mb-5"
               style={{ fontSize: "clamp(1.8rem,3vw,3rem)" }}>
               Build the infrastructure Africa&apos;s creative economy deserves.
             </h2>
-            <p className="text-[#C8C4BC] text-base leading-relaxed">
+            <p className="text-[#AAAAAA] text-base leading-relaxed">
               We are always open to strategic partnerships across finance, technology, education,
               legal services, and creative industries. If your organisation shares our commitment
               to African creative enterprise, reach out.
@@ -177,7 +177,7 @@ export default function PartnersPage() {
           </div>
           <div className="flex flex-col gap-4">
             <Link href="/contact"
-              className="inline-flex items-center justify-center bg-[#B8902A] text-[#0D1B2A] text-sm font-bold px-8 py-4 hover:bg-[#D4A843] transition-colors">
+              className="inline-flex items-center justify-center bg-[#EA6B0E] text-[#1C1C1C] text-sm font-bold px-8 py-4 hover:bg-[#FF7A1A] transition-colors">
               Get in touch →
             </Link>
             <Link href="/about"

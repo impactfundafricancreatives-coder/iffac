@@ -12,8 +12,8 @@ export function Eyebrow({ children, className, color = "default" }: EyebrowProps
       className={cn(
         "eyebrow block",
         {
-          "text-[#4A4A4A]": color === "default",
-          "text-[#C9A24A]": color === "gold",
+          "text-[#444444]": color === "default",
+          "text-[#EA6B0E]": color === "gold",
           "text-[#1F3A8A]": color === "indigo",
         },
         className

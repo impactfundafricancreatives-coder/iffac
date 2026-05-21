@@ -8,7 +8,7 @@ import Link from "next/link";
 export function ImpactStrip() {
   return (
     <section
-      className="section-gap bg-[#0B1B2B]"
+      className="section-gap bg-[#1C1C1C]"
       aria-labelledby="impact-heading"
     >
       <div className="container-content">
@@ -21,7 +21,7 @@ export function ImpactStrip() {
           </div>
           <Link
             href="/impact"
-            className="caption text-[#A8A39A] hover:text-[#C9A24A] transition-colors inline-flex items-center gap-2"
+            className="caption text-[#888888] hover:text-[#EA6B0E] transition-colors inline-flex items-center gap-2"
           >
             Full impact dashboard →
           </Link>
@@ -32,22 +32,22 @@ export function ImpactStrip() {
           {impactStats.map((stat) => (
             <div
               key={stat.label}
-              className="bg-[#0B1B2B] p-8 md:p-10"
+              className="bg-[#1C1C1C] p-8 md:p-10"
             >
-              <dt className="caption text-[#A8A39A] mb-3">{stat.label}</dt>
+              <dt className="caption text-[#888888] mb-3">{stat.label}</dt>
               <dd className="font-display font-medium text-white text-4xl md:text-5xl lg:text-6xl leading-none">
                 {stat.value}
               </dd>
               {stat.note && (
-                <p className="caption text-[#4A4A4A] mt-2">{stat.note}</p>
+                <p className="caption text-[#444444] mt-2">{stat.note}</p>
               )}
             </div>
           ))}
         </dl>
 
-        <p className="mt-6 caption text-[#4A4A4A]">
+        <p className="mt-6 caption text-[#444444]">
           Figures current as of May 2026.{" "}
-          <Link href="/impact/methodology" className="text-[#A8A39A] hover:text-[#C9A24A] transition-colors underline underline-offset-2">
+          <Link href="/impact/methodology" className="text-[#888888] hover:text-[#EA6B0E] transition-colors underline underline-offset-2">
             Read our methodology
           </Link>
         </p>

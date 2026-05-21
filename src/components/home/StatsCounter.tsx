@@ -47,10 +47,10 @@ function CountUp({ from, to, prefix = "", suffix = "", label, duration = 2000 }:
 
   return (
     <div ref={ref} className="text-center md:text-left">
-      <p className="font-display font-medium text-[#B8902A] leading-none mb-2" style={{ fontSize: "clamp(2.5rem,4vw,4rem)" }}>
+      <p className="font-display font-medium text-[#EA6B0E] leading-none mb-2" style={{ fontSize: "clamp(2.5rem,4vw,4rem)" }}>
         {prefix}{value}{suffix}
       </p>
-      <p className="text-[#C8C4BC] text-sm tracking-wide">{label}</p>
+      <p className="text-[#AAAAAA] text-sm tracking-wide">{label}</p>
     </div>
   );
 }

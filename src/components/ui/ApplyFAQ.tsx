@@ -35,20 +35,20 @@ export function ApplyFAQ() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
       {faqs.map((faq, i) => (
-        <div key={i} className="border border-[#A8A39A]/30 bg-white">
+        <div key={i} className="border border-[#888888]/30 bg-white">
           <button
             className="w-full flex items-start justify-between gap-4 p-6 text-left"
             onClick={() => setOpen(open === i ? null : i)}
             aria-expanded={open === i}
           >
-            <span className="text-[#0B1B2B] font-semibold text-base leading-snug">{faq.q}</span>
-            <span className="shrink-0 mt-0.5 text-[#A8A39A] text-xl leading-none">
+            <span className="text-[#1C1C1C] font-semibold text-base leading-snug">{faq.q}</span>
+            <span className="shrink-0 mt-0.5 text-[#888888] text-xl leading-none">
               {open === i ? "−" : "+"}
             </span>
           </button>
           {open === i && (
             <div className="px-6 pb-6">
-              <p className="text-[#4A4A4A] text-sm leading-relaxed border-t border-[#A8A39A]/20 pt-4">
+              <p className="text-[#444444] text-sm leading-relaxed border-t border-[#888888]/20 pt-4">
                 {faq.a}
               </p>
             </div>

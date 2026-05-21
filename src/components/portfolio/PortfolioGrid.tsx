@@ -27,9 +27,9 @@ const stages: { value: Stage; label: string }[] = [
 ];
 
 const stageColor: Record<string, string> = {
-  incubation: "#B5651D",
+  incubation: "#FFC200",
   acceleration: "#1F3A8A",
-  seed: "#C9A24A",
+  seed: "#EA6B0E",
 };
 
 export function PortfolioGrid() {
@@ -52,10 +52,10 @@ export function PortfolioGrid() {
               key={d.value}
               onClick={() => setDiscipline(d.value)}
               className={cn(
-                "caption px-4 py-2 border transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A24A]",
+                "caption px-4 py-2 border transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EA6B0E]",
                 discipline === d.value
-                  ? "bg-[#0B1B2B] text-white border-[#0B1B2B]"
-                  : "bg-transparent text-[#4A4A4A] border-[#A8A39A]/40 hover:border-[#0B1B2B] hover:text-[#0B1B2B]"
+                  ? "bg-[#1C1C1C] text-white border-[#1C1C1C]"
+                  : "bg-transparent text-[#444444] border-[#888888]/40 hover:border-[#1C1C1C] hover:text-[#1C1C1C]"
               )}
               aria-pressed={discipline === d.value}
             >
@@ -64,7 +64,7 @@ export function PortfolioGrid() {
           ))}
         </div>
 
-        <div className="w-px bg-[#A8A39A]/30 self-stretch mx-1 hidden sm:block" aria-hidden />
+        <div className="w-px bg-[#888888]/30 self-stretch mx-1 hidden sm:block" aria-hidden />
 
         <div className="flex flex-wrap gap-2">
           {stages.map((s) => (
@@ -72,10 +72,10 @@ export function PortfolioGrid() {
               key={s.value}
               onClick={() => setStage(s.value)}
               className={cn(
-                "caption px-4 py-2 border transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A24A]",
+                "caption px-4 py-2 border transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EA6B0E]",
                 stage === s.value
-                  ? "bg-[#0B1B2B] text-white border-[#0B1B2B]"
-                  : "bg-transparent text-[#4A4A4A] border-[#A8A39A]/40 hover:border-[#0B1B2B] hover:text-[#0B1B2B]"
+                  ? "bg-[#1C1C1C] text-white border-[#1C1C1C]"
+                  : "bg-transparent text-[#444444] border-[#888888]/40 hover:border-[#1C1C1C] hover:text-[#1C1C1C]"
               )}
               aria-pressed={stage === s.value}
             >
@@ -86,36 +86,36 @@ export function PortfolioGrid() {
       </div>
 
       {/* Results count */}
-      <p className="caption text-[#A8A39A] mb-6" aria-live="polite">
+      <p className="caption text-[#888888] mb-6" aria-live="polite">
         {filtered.length} {filtered.length === 1 ? "brand" : "brands"} found
       </p>
 
       {/* Grid */}
       {filtered.length === 0 ? (
         <div className="py-20 text-center">
-          <p className="heading-4 text-[#4A4A4A] mb-2">No matches in this filter.</p>
-          <p className="body-md text-[#A8A39A]">
+          <p className="heading-4 text-[#444444] mb-2">No matches in this filter.</p>
+          <p className="body-md text-[#888888]">
             Try widening your search, there are {portfolioBrands.length} brands and counting.
           </p>
           <button
             onClick={() => { setDiscipline("all"); setStage("all"); }}
-            className="mt-4 caption text-[#1F3A8A] hover:text-[#0B1B2B] transition-colors underline underline-offset-2"
+            className="mt-4 caption text-[#1F3A8A] hover:text-[#1C1C1C] transition-colors underline underline-offset-2"
           >
             Clear all filters
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#A8A39A]/20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#888888]/20">
           {filtered.map((brand) => (
             <Link
               key={brand.slug}
               href={`/portfolio/${brand.slug}`}
-              className="group bg-[#F4EFE6] hover:bg-[#0B1B2B] transition-colors duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A24A]"
+              className="group bg-[#FAFAFA] hover:bg-[#1C1C1C] transition-colors duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EA6B0E]"
             >
               {/* Image */}
-              <div className="aspect-[4/3] bg-[#A8A39A]/20 overflow-hidden relative flex items-center justify-center">
+              <div className="aspect-[4/3] bg-[#888888]/20 overflow-hidden relative flex items-center justify-center">
                 <span
-                  className="font-display font-medium text-8xl text-[#A8A39A]/25 group-hover:text-white/10 transition-colors duration-500 select-none"
+                  className="font-display font-medium text-8xl text-[#888888]/25 group-hover:text-white/10 transition-colors duration-500 select-none"
                   aria-hidden
                 >
                   {brand.name.charAt(0)}
@@ -126,17 +126,17 @@ export function PortfolioGrid() {
               <div className="p-6 flex flex-col gap-2">
                 <div className="flex items-center justify-between">
                   <span
-                    className="eyebrow transition-colors duration-300 group-hover:text-[#C9A24A]"
+                    className="eyebrow transition-colors duration-300 group-hover:text-[#EA6B0E]"
                     style={{ color: stageColor[brand.stage] }}
                   >
                     {brand.discipline} · {brand.country}
                   </span>
-                  <span className="caption text-[#A8A39A]">{brand.year}</span>
+                  <span className="caption text-[#888888]">{brand.year}</span>
                 </div>
-                <h3 className="heading-4 text-[#0B1B2B] group-hover:text-white transition-colors duration-300">
+                <h3 className="heading-4 text-[#1C1C1C] group-hover:text-white transition-colors duration-300">
                   {brand.name}
                 </h3>
-                <p className="caption text-[#4A4A4A] group-hover:text-[#A8A39A] transition-colors duration-300">
+                <p className="caption text-[#444444] group-hover:text-[#888888] transition-colors duration-300">
                   {brand.tagline}
                 </p>
                 <span

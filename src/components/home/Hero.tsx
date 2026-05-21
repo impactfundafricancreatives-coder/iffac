@@ -11,12 +11,12 @@ const ease = [0.16, 1, 0.3, 1] as const;
 export function Hero() {
   return (
     <section
-      className="relative min-h-screen flex items-end bg-[#0B1B2B] overflow-hidden"
+      className="relative min-h-screen flex items-end bg-[#1C1C1C] overflow-hidden"
       aria-label="Homepage hero"
     >
       {/* Background image placeholder, replace with Next/Image of a creative at work */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-[#0B1B2B] via-[#0B1B2B]/90 to-[#1F3A8A]/30"
+        className="absolute inset-0 bg-gradient-to-br from-[#1C1C1C] via-[#1C1C1C]/90 to-[#1F3A8A]/30"
         aria-hidden
       />
 
@@ -28,7 +28,7 @@ export function Hero() {
 
       {/* Ashanti Gold accent rule */}
       <motion.div
-        className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#C9A24A] to-transparent"
+        className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#EA6B0E] to-transparent"
         initial={{ scaleY: 0, opacity: 0 }}
         animate={{ scaleY: 1, opacity: 1 }}
         transition={{ duration: 1.4, delay: 0.4, ease }}
@@ -55,11 +55,11 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.35, ease }}
           >
             Capital that respects craft.{" "}
-            <span className="text-[#C9A24A] italic">Craft</span> that earns capital.
+            <span className="text-[#EA6B0E] italic">Craft</span> that earns capital.
           </motion.h1>
 
           <motion.p
-            className="body-lg text-[#A8A39A] max-w-2xl mb-10"
+            className="body-lg text-[#888888] max-w-2xl mb-10"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5, ease }}
@@ -84,7 +84,7 @@ export function Hero() {
               <Button
                 variant="ghost"
                 size="lg"
-                className="text-white hover:text-[#C9A24A] underline-offset-4"
+                className="text-white hover:text-[#EA6B0E] underline-offset-4"
               >
                 For investors →
               </Button>
@@ -101,10 +101,10 @@ export function Hero() {
         transition={{ duration: 0.6, delay: 1 }}
         aria-hidden
       >
-        <span className="caption text-[#A8A39A] [writing-mode:vertical-lr] tracking-widest text-[10px]">
+        <span className="caption text-[#888888] [writing-mode:vertical-lr] tracking-widest text-[10px]">
           SCROLL
         </span>
-        <div className="w-px h-12 bg-gradient-to-b from-[#C9A24A] to-transparent" />
+        <div className="w-px h-12 bg-gradient-to-b from-[#EA6B0E] to-transparent" />
       </motion.div>
     </section>
   );

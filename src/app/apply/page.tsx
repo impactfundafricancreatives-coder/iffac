@@ -24,16 +24,16 @@ const eligibility = [
 
 export default function ApplyPage() {
   return (
-    <div className="bg-[#F4EFE6]">
+    <div className="bg-[#FAFAFA]">
 
       {/* Hero */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-[#0B1B2B] px-6 md:px-16 lg:px-24">
+      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-[#1C1C1C] px-6 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto">
           {/* Deadline banner */}
           <div className="inline-flex items-center gap-3 bg-[#1F3A8A] px-5 py-2.5 mb-10">
-            <span className="w-2 h-2 rounded-full bg-[#C9A24A] animate-pulse shrink-0" />
+            <span className="w-2 h-2 rounded-full bg-[#EA6B0E] animate-pulse shrink-0" />
             <span className="text-white text-sm font-semibold">
-              Cohort 2026 open, deadline <strong className="text-[#C9A24A]">30 June 2026</strong>
+              Cohort 2026 open, deadline <strong className="text-[#EA6B0E]">30 June 2026</strong>
             </span>
           </div>
 
@@ -41,13 +41,13 @@ export default function ApplyPage() {
             Apply. We read every application.
           </h1>
 
-          <p className="text-[#A8A39A] text-lg md:text-xl max-w-2xl leading-relaxed mb-12">
+          <p className="text-[#888888] text-lg md:text-xl max-w-2xl leading-relaxed mb-12">
             Up to <strong className="text-white">€2M in patient capital</strong> for Africa's most ambitious
             creative entrepreneurs, in fashion, film, music, design, crafts, and beyond.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/apply/portal" className="inline-flex items-center justify-center bg-[#C9A24A] text-[#0B1B2B] text-sm font-bold px-8 py-4 hover:bg-[#b8913e] transition-colors">
+            <Link href="/apply/portal" className="inline-flex items-center justify-center bg-[#EA6B0E] text-[#1C1C1C] text-sm font-bold px-8 py-4 hover:bg-[#D45C00] transition-colors">
               Start your application →
             </Link>
             <a href="/resources/application-handbook.pdf" className="inline-flex items-center justify-center border border-white/40 text-white text-sm font-semibold px-8 py-4 hover:bg-white/5 transition-colors">
@@ -58,34 +58,34 @@ export default function ApplyPage() {
       </section>
 
       {/* Eligibility */}
-      <section className="py-20 md:py-28 px-6 md:px-16 lg:px-24 border-b border-[#A8A39A]/20">
+      <section className="py-20 md:py-28 px-6 md:px-16 lg:px-24 border-b border-[#888888]/20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-[#B5651D] text-xs font-bold tracking-[0.2em] uppercase mb-5">Eligibility</p>
-            <h2 className="font-display text-[#0B1B2B] text-4xl md:text-5xl font-medium leading-snug mb-6">
+            <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">Eligibility</p>
+            <h2 className="font-display text-[#1C1C1C] text-4xl md:text-5xl font-medium leading-snug mb-6">
               Is IFFAC right for you?
             </h2>
-            <p className="text-[#4A4A4A] text-lg leading-relaxed mb-8">
+            <p className="text-[#444444] text-lg leading-relaxed mb-8">
               We back creative entrepreneurs at every stage, from first idea to second fund raise.
               Not sure which program fits? Answer the 3-minute quiz.
             </p>
-            <Link href="/apply/eligibility" className="inline-flex items-center bg-[#0B1B2B] text-white text-sm font-bold px-7 py-3.5 hover:bg-[#111111] transition-colors">
+            <Link href="/apply/eligibility" className="inline-flex items-center bg-[#1C1C1C] text-white text-sm font-bold px-7 py-3.5 hover:bg-[#252525] transition-colors">
               Take the eligibility quiz →
             </Link>
           </div>
 
           <div className="space-y-3">
             {eligibility.map((item) => (
-              <div key={item} className="flex items-start gap-4 p-5 bg-white border border-[#A8A39A]/20">
-                <span className="mt-0.5 w-5 h-5 rounded-full bg-[#2F5D3A] flex items-center justify-center shrink-0">
+              <div key={item} className="flex items-start gap-4 p-5 bg-white border border-[#888888]/20">
+                <span className="mt-0.5 w-5 h-5 rounded-full bg-[#0AA350] flex items-center justify-center shrink-0">
                   <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
                     <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
-                <p className="text-[#0B1B2B] text-base">{item}</p>
+                <p className="text-[#1C1C1C] text-base">{item}</p>
               </div>
             ))}
-            <p className="text-[#A8A39A] text-sm pt-2">
+            <p className="text-[#888888] text-sm pt-2">
               Unsure? <Link href="/contact" className="text-[#1F3A8A] font-semibold hover:underline">Talk to a program officer →</Link>
             </p>
           </div>
@@ -93,25 +93,25 @@ export default function ApplyPage() {
       </section>
 
       {/* How to apply */}
-      <section className="py-20 md:py-28 px-6 md:px-16 lg:px-24 bg-[#0B1B2B]">
+      <section className="py-20 md:py-28 px-6 md:px-16 lg:px-24 bg-[#1C1C1C]">
         <div className="max-w-7xl mx-auto">
-          <p className="text-[#C9A24A] text-xs font-bold tracking-[0.2em] uppercase mb-5">How to Apply</p>
+          <p className="text-[#EA6B0E] text-xs font-bold tracking-[0.2em] uppercase mb-5">How to Apply</p>
           <h2 className="font-display text-white text-4xl md:text-5xl font-medium leading-snug mb-16">
             Four steps to a funded future.
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10">
             {steps.map((s) => (
-              <div key={s.n} className="bg-[#0B1B2B] p-10 hover:bg-[#0f2338] transition-colors">
+              <div key={s.n} className="bg-[#1C1C1C] p-10 hover:bg-[#252525] transition-colors">
                 <p className="font-display text-white/10 text-6xl font-medium mb-6 leading-none">{s.n}</p>
                 <h3 className="text-white text-xl font-bold mb-3">{s.title}</h3>
-                <p className="text-[#A8A39A] text-sm leading-relaxed">{s.body}</p>
+                <p className="text-[#888888] text-sm leading-relaxed">{s.body}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-12 flex flex-col sm:flex-row gap-4">
-            <Link href="/apply/portal" className="inline-flex items-center justify-center bg-[#C9A24A] text-[#0B1B2B] text-sm font-bold px-8 py-4 hover:bg-[#b8913e] transition-colors">
+            <Link href="/apply/portal" className="inline-flex items-center justify-center bg-[#EA6B0E] text-[#1C1C1C] text-sm font-bold px-8 py-4 hover:bg-[#D45C00] transition-colors">
               Start your application →
             </Link>
             <Link href="/contact" className="inline-flex items-center justify-center border border-white/40 text-white text-sm font-semibold px-8 py-4 hover:bg-white/5 transition-colors">
@@ -124,8 +124,8 @@ export default function ApplyPage() {
       {/* FAQ */}
       <section className="py-20 md:py-28 px-6 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <p className="text-[#B5651D] text-xs font-bold tracking-[0.2em] uppercase mb-5">FAQ</p>
-          <h2 className="font-display text-[#0B1B2B] text-4xl font-medium mb-12">
+          <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">FAQ</p>
+          <h2 className="font-display text-[#1C1C1C] text-4xl font-medium mb-12">
             Questions we get asked most.
           </h2>
           <ApplyFAQ />
@@ -133,15 +133,15 @@ export default function ApplyPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 md:py-24 bg-[#C9A24A] px-6 md:px-16 lg:px-24">
+      <section className="py-20 md:py-24 bg-[#EA6B0E] px-6 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           <div>
-            <h2 className="font-display text-[#0B1B2B] text-4xl font-medium mb-2">Ready to apply?</h2>
-            <p className="text-[#0B1B2B]/70 text-base">
+            <h2 className="font-display text-[#1C1C1C] text-4xl font-medium mb-2">Ready to apply?</h2>
+            <p className="text-[#1C1C1C]/70 text-base">
               Save progress any time. Return before the deadline. We read everything.
             </p>
           </div>
-          <Link href="/apply/portal" className="shrink-0 inline-flex items-center justify-center bg-[#0B1B2B] text-white text-sm font-bold px-10 py-4 hover:bg-[#111111] transition-colors">
+          <Link href="/apply/portal" className="shrink-0 inline-flex items-center justify-center bg-[#1C1C1C] text-white text-sm font-bold px-10 py-4 hover:bg-[#252525] transition-colors">
             Start your application →
           </Link>
         </div>

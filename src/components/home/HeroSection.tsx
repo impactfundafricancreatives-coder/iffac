@@ -39,7 +39,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(105deg, rgba(13,27,42,0.92) 0%, rgba(13,27,42,0.82) 45%, rgba(13,27,42,0.45) 75%, rgba(13,27,42,0.2) 100%)",
+          background: "linear-gradient(105deg, rgba(28,28,28,0.92) 0%, rgba(28,28,28,0.82) 45%, rgba(28,28,28,0.45) 75%, rgba(28,28,28,0.2) 100%)",
           zIndex: 1,
         }}
         aria-hidden
@@ -48,21 +48,21 @@ export function HeroSection() {
       {/* Top vignette so nav is always readable */}
       <div
         className="absolute top-0 inset-x-0 h-40 pointer-events-none"
-        style={{ background: "linear-gradient(to bottom, rgba(13,27,42,0.6) 0%, transparent 100%)", zIndex: 2 }}
+        style={{ background: "linear-gradient(to bottom, rgba(28,28,28,0.6) 0%, transparent 100%)", zIndex: 2 }}
         aria-hidden
       />
 
       {/* Bottom vignette */}
       <div
         className="absolute bottom-0 inset-x-0 h-64 pointer-events-none"
-        style={{ background: "linear-gradient(to top, rgba(13,27,42,0.8) 0%, transparent 100%)", zIndex: 2 }}
+        style={{ background: "linear-gradient(to top, rgba(28,28,28,0.8) 0%, transparent 100%)", zIndex: 2 }}
         aria-hidden
       />
 
       {/* Geometric accents */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 2 }} aria-hidden>
-        <div className="absolute top-0 right-[22%] bottom-0 w-px bg-gradient-to-b from-transparent via-[#B8902A]/15 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-[#B8902A]/50 via-[#B8902A]/15 to-transparent" />
+        <div className="absolute top-0 right-[22%] bottom-0 w-px bg-gradient-to-b from-transparent via-[#EA6B0E]/15 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-[#EA6B0E]/50 via-[#EA6B0E]/15 to-transparent" />
       </div>
 
       {/* Content */}
@@ -70,7 +70,7 @@ export function HeroSection() {
 
         {/* Eyebrow */}
         <div className="hero-word" data-reveal="200" style={{ opacity: 0 }}>
-          <p className="text-[#C4581A] text-xs font-bold tracking-[0.25em] uppercase mb-7">
+          <p className="text-[#FFC200] text-xs font-bold tracking-[0.25em] uppercase mb-7">
             Impact Fund for African Creatives
           </p>
         </div>
@@ -95,7 +95,7 @@ export function HeroSection() {
           <span className="block">
             <em
               data-reveal="560"
-              className="hero-word inline-block text-[#B8902A] gold-pulse"
+              className="hero-word inline-block text-[#EA6B0E] gold-pulse"
               style={{ fontSize: "clamp(3rem, 7vw, 7.5rem)", fontStyle: "italic", opacity: 0 }}
             >
               craft.
@@ -131,7 +131,7 @@ export function HeroSection() {
           <Link
             href="/apply"
             data-cursor="Apply →"
-            className="inline-flex items-center justify-center bg-[#B8902A] text-[#0D1B2A] text-sm font-bold px-9 py-4 hover:bg-[#D4A843] transition-colors duration-200"
+            className="inline-flex items-center justify-center bg-[#EA6B0E] text-[#1C1C1C] text-sm font-bold px-9 py-4 hover:bg-[#FF7A1A] transition-colors duration-200"
           >
             Apply for funding →
           </Link>
@@ -148,7 +148,7 @@ export function HeroSection() {
       <div
         data-reveal="1200"
         className="hero-word relative w-full border-t border-white/10"
-        style={{ zIndex: 3, opacity: 0, background: "rgba(13,27,42,0.7)", backdropFilter: "blur(12px)" }}
+        style={{ zIndex: 3, opacity: 0, background: "rgba(28,28,28,0.7)", backdropFilter: "blur(12px)" }}
       >
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-2 md:grid-cols-4">
           {[
@@ -158,7 +158,7 @@ export function HeroSection() {
             { val: "70", suffix: "+",  label: "Investors in network" },
           ].map((s) => (
             <div key={s.label} className="py-6 px-2 md:px-6 border-r border-white/10 last:border-0">
-              <p className="font-display text-[#B8902A] font-medium leading-none mb-1.5" style={{ fontSize: "clamp(1.8rem,3vw,2.8rem)" }}>
+              <p className="font-display text-[#EA6B0E] font-medium leading-none mb-1.5" style={{ fontSize: "clamp(1.8rem,3vw,2.8rem)" }}>
                 {s.prefix}{s.val}{s.suffix}
               </p>
               <p className="text-white/50 text-xs tracking-wide">{s.label}</p>

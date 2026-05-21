@@ -19,13 +19,13 @@ export function DataRoomForm() {
         { id: "aum", label: "AUM / Allocation size (optional)", type: "text" },
       ].map((field) => (
         <div key={field.id}>
-          <label htmlFor={field.id} className="caption text-[#A8A39A] block mb-1">
+          <label htmlFor={field.id} className="caption text-[#888888] block mb-1">
             {field.label}
           </label>
           <input
             id={field.id}
             type={field.type}
-            className="w-full bg-white/5 border border-white/15 text-white placeholder-[#4A4A4A] px-4 py-3 text-sm font-ui focus:outline-none focus:border-[#C9A24A] transition-colors"
+            className="w-full bg-white/5 border border-white/15 text-white placeholder-[#444444] px-4 py-3 text-sm font-ui focus:outline-none focus:border-[#EA6B0E] transition-colors"
           />
         </div>
       ))}
@@ -34,7 +34,7 @@ export function DataRoomForm() {
         Submit request <ArrowRight size={14} />
       </Button>
 
-      <p className="caption text-[#4A4A4A]">
+      <p className="caption text-[#444444]">
         We respond to all qualified inquiries within 2 business days.
       </p>
     </form>

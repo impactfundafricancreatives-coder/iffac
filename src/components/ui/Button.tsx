@@ -18,16 +18,16 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           "inline-flex items-center justify-center gap-2 font-ui font-semibold tracking-wide transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ashanti-gold focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
           {
             // Primary, Sahel Ink fill
-            "bg-[#0B1B2B] text-white hover:bg-[#111111] hover:translate-x-0.5 border-b-2 border-transparent hover:border-[#C9A24A]":
+            "bg-[#1C1C1C] text-white hover:bg-[#252525] hover:translate-x-0.5 border-b-2 border-transparent hover:border-[#EA6B0E]":
               variant === "primary",
             // Secondary, bordered
-            "border border-[#0B1B2B] text-[#0B1B2B] bg-transparent hover:bg-[#0B1B2B] hover:text-white":
+            "border border-[#1C1C1C] text-[#1C1C1C] bg-transparent hover:bg-[#1C1C1C] hover:text-white":
               variant === "secondary",
             // Ghost, text only
-            "text-[#0B1B2B] underline underline-offset-4 hover:text-[#1F3A8A]":
+            "text-[#1C1C1C] underline underline-offset-4 hover:text-[#1F3A8A]":
               variant === "ghost",
             // Gold accent
-            "bg-[#C9A24A] text-[#0B1B2B] hover:bg-[#b08c38]":
+            "bg-[#EA6B0E] text-[#1C1C1C] hover:bg-[#D45C00]":
               variant === "gold",
           },
           {

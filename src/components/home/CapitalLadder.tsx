@@ -11,7 +11,7 @@ const stages = [
     description:
       "Structured programs with sub-sector incubation specialists. Capacity building, business support, and mentorship for early-stage creative ventures.",
     href: "/programs/incubation",
-    accentColor: "#B5651D",
+    accentColor: "#FFC200",
   },
   {
     number: "02",
@@ -31,31 +31,31 @@ const stages = [
     description:
       "Patient capital up to €2M following an investment-committee pitch and a vetted business plan, with continued technical assistance at every stage.",
     href: "/programs/seed",
-    accentColor: "#C9A24A",
+    accentColor: "#EA6B0E",
   },
 ];
 
 export function CapitalLadder() {
   return (
-    <section className="section-gap bg-[#F4EFE6]" aria-labelledby="ladder-heading">
+    <section className="section-gap bg-[#FAFAFA]" aria-labelledby="ladder-heading">
       <div className="container-content">
         <div className="mb-12 md:mb-16 max-w-2xl">
           <Eyebrow className="mb-4">Programs</Eyebrow>
-          <h2 id="ladder-heading" className="heading-2 text-[#0B1B2B] mb-4">
+          <h2 id="ladder-heading" className="heading-2 text-[#1C1C1C] mb-4">
             Three stages. Sixteen sub-sectors.<br />One ladder to scale.
           </h2>
-          <p className="body-lg text-[#4A4A4A]">
+          <p className="body-lg text-[#444444]">
             A patient-capital ladder built for how creative businesses actually grow, from
             idea to enterprise, from enterprise to global stage.
           </p>
         </div>
 
         {/* Stage cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#A8A39A]/30">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-[#888888]/30">
           {stages.map((stage, i) => (
             <div
               key={stage.label}
-              className="relative flex flex-col p-8 md:p-10 border-b md:border-b-0 md:border-r border-[#A8A39A]/30 last:border-0 group hover:bg-[#0B1B2B] transition-colors duration-500"
+              className="relative flex flex-col p-8 md:p-10 border-b md:border-b-0 md:border-r border-[#888888]/30 last:border-0 group hover:bg-[#1C1C1C] transition-colors duration-500"
             >
               {/* Stage number */}
               <span
@@ -74,11 +74,11 @@ export function CapitalLadder() {
                 >
                   {stage.label}
                 </span>
-                <p className="heading-3 text-[#0B1B2B] group-hover:text-white mb-1 transition-colors duration-300">
+                <p className="heading-3 text-[#1C1C1C] group-hover:text-white mb-1 transition-colors duration-300">
                   {stage.ticket}
                 </p>
-                <p className="caption text-[#A8A39A] mb-5">{stage.duration}</p>
-                <p className="body-md text-[#4A4A4A] group-hover:text-[#A8A39A] transition-colors duration-300">
+                <p className="caption text-[#888888] mb-5">{stage.duration}</p>
+                <p className="body-md text-[#444444] group-hover:text-[#888888] transition-colors duration-300">
                   {stage.description}
                 </p>
               </div>
@@ -86,7 +86,7 @@ export function CapitalLadder() {
               {/* CTA */}
               <Link
                 href={stage.href}
-                className="mt-8 inline-flex items-center gap-2 caption text-[#0B1B2B] group-hover:text-[#C9A24A] transition-colors duration-300 group/link"
+                className="mt-8 inline-flex items-center gap-2 caption text-[#1C1C1C] group-hover:text-[#EA6B0E] transition-colors duration-300 group/link"
                 aria-label={`Learn about ${stage.label} program`}
               >
                 Learn more
@@ -106,7 +106,7 @@ export function CapitalLadder() {
           ))}
         </div>
 
-        <p className="mt-6 caption text-[#A8A39A]">
+        <p className="mt-6 caption text-[#888888]">
           Creatives may enter at any stage. All programs provide capital + capability + connections.
         </p>
       </div>

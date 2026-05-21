@@ -7,10 +7,10 @@ export function DataRoomForm() {
 
   if (sent) {
     return (
-      <div className="flex flex-col items-center justify-center py-16 border border-[#C9A24A]/30 bg-[#C9A24A]/5 text-center px-8">
-        <p className="text-[#C9A24A] text-3xl mb-4">✓</p>
+      <div className="flex flex-col items-center justify-center py-16 border border-[#EA6B0E]/30 bg-[#EA6B0E]/5 text-center px-8">
+        <p className="text-[#EA6B0E] text-3xl mb-4">✓</p>
         <p className="font-display text-white text-2xl font-medium mb-2">Request received.</p>
-        <p className="text-[#A8A39A] text-sm">We'll be in touch within 2 business days.</p>
+        <p className="text-[#888888] text-sm">We'll be in touch within 2 business days.</p>
       </div>
     );
   }
@@ -27,21 +27,21 @@ export function DataRoomForm() {
         { id: "dr-aum", label: "Allocation size (optional)", type: "text", placeholder: "e.g. US$5M–15M" },
       ].map((f) => (
         <div key={f.id}>
-          <label htmlFor={f.id} className="block text-[#A8A39A] text-xs font-bold uppercase tracking-wide mb-2">
+          <label htmlFor={f.id} className="block text-[#888888] text-xs font-bold uppercase tracking-wide mb-2">
             {f.label}
           </label>
           <input
             id={f.id}
             type={f.type}
             placeholder={f.placeholder}
-            className="w-full bg-white/5 border border-white/15 text-white placeholder-[#4A4A4A] px-4 py-3 text-sm focus:outline-none focus:border-[#C9A24A] transition-colors"
+            className="w-full bg-white/5 border border-white/15 text-white placeholder-[#444444] px-4 py-3 text-sm focus:outline-none focus:border-[#EA6B0E] transition-colors"
           />
         </div>
       ))}
 
       <button
         type="submit"
-        className="mt-2 bg-[#C9A24A] text-[#0B1B2B] text-sm font-bold px-6 py-3.5 hover:bg-[#b8913e] transition-colors text-left"
+        className="mt-2 bg-[#EA6B0E] text-[#1C1C1C] text-sm font-bold px-6 py-3.5 hover:bg-[#D45C00] transition-colors text-left"
       >
         Submit request →
       </button>

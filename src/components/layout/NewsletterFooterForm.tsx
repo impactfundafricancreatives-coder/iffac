@@ -8,8 +8,8 @@ export function NewsletterFooterForm() {
 
   if (submitted) {
     return (
-      <div className="flex items-center gap-3 px-4 py-3 bg-[#C9A24A]/10 border border-[#C9A24A]/30">
-        <span className="text-[#C9A24A]">✓</span>
+      <div className="flex items-center gap-3 px-4 py-3 bg-[#EA6B0E]/10 border border-[#EA6B0E]/30">
+        <span className="text-[#EA6B0E]">✓</span>
         <p className="caption text-white">You're in. Welcome to the IFFAC Journal.</p>
       </div>
     );
@@ -30,7 +30,7 @@ export function NewsletterFooterForm() {
         type="email"
         required
         placeholder="your@email.com"
-        className="flex-1 bg-white/10 border border-white/40 text-white placeholder-[#A8A39A] px-4 py-3 text-sm font-ui focus:outline-none focus:border-[#C9A24A] transition-colors"
+        className="flex-1 bg-white/10 border border-white/40 text-white placeholder-[#888888] px-4 py-3 text-sm font-ui focus:outline-none focus:border-[#EA6B0E] transition-colors"
       />
       <Button variant="gold" size="md" type="submit">Subscribe</Button>
     </form>

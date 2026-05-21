@@ -59,10 +59,10 @@ const objectives = [
 
 export default function AboutPage() {
   return (
-    <div style={{ background: "#F5F0E8" }}>
+    <div style={{ background: "#FAFAFA" }}>
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden" style={{ background: "#0D1B2A", minHeight: "60vh" }}>
+      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden" style={{ background: "#1C1C1C", minHeight: "60vh" }}>
         <div className="absolute inset-0 z-0">
           <Image
             src="/creative-kayayei.jpg"
@@ -71,15 +71,15 @@ export default function AboutPage() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(100deg, rgba(13,27,42,0.95) 0%, rgba(13,27,42,0.80) 50%, rgba(13,27,42,0.4) 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(100deg, rgba(28,28,28,0.95) 0%, rgba(28,28,28,0.80) 50%, rgba(28,28,28,0.4) 100%)" }} />
         </div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
-          <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-6">About IFFAC</p>
+          <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-6">About IFFAC</p>
           <h1 className="font-display font-medium leading-[1.05] tracking-tight max-w-3xl mb-8 text-white"
             style={{ fontSize: "clamp(3rem,6vw,7rem)" }}>
             Built by an African, for Africa&apos;s creatives.
           </h1>
-          <p className="text-[#C8C4BC] max-w-2xl" style={{ fontSize: "1.2rem", lineHeight: 1.7 }}>
+          <p className="text-[#AAAAAA] max-w-2xl" style={{ fontSize: "1.2rem", lineHeight: 1.7 }}>
             IFFAC is a US$150M patient-capital platform that backs visionary African entrepreneurs
             in fashion, film, music, design, craft, and more.
           </p>
@@ -87,28 +87,28 @@ export default function AboutPage() {
       </section>
 
       {/* Mission + Vision */}
-      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#0D1B2A]/10">
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#1C1C1C]/10">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Mission</p>
-            <p className="font-display text-[#0D1B2A] font-medium leading-snug mb-8"
+            <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">Mission</p>
+            <p className="font-display text-[#1C1C1C] font-medium leading-snug mb-8"
               style={{ fontSize: "clamp(1.8rem,3vw,2.8rem)" }}>
               To structure, facilitate, and enable Africa&apos;s creative sector to access capital, resources, and international markets with profitability and integrity.
             </p>
-            <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Vision</p>
-            <p className="text-[#0D1B2A]/70 text-lg leading-relaxed">
+            <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">Vision</p>
+            <p className="text-[#1C1C1C]/70 text-lg leading-relaxed">
               To empower the creative sector of Africa by enabling and facilitating its creatives
               to resonate at a global level — building sustainable enterprises that compete and win
               on the world&apos;s most important stages.
             </p>
           </div>
           <div>
-            <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-6">Our Objectives</p>
+            <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-6">Our Objectives</p>
             <ul className="space-y-3">
               {objectives.map((obj, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-[#B8902A]" />
-                  <p className="text-[#0D1B2A]/70 text-base leading-relaxed">{obj}</p>
+                  <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-[#EA6B0E]" />
+                  <p className="text-[#1C1C1C]/70 text-base leading-relaxed">{obj}</p>
                 </li>
               ))}
             </ul>
@@ -117,16 +117,16 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#0D1B2A]/10">
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#1C1C1C]/10">
         <div className="max-w-[1440px] mx-auto">
-          <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-12">Our Story</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#0D1B2A]/10">
+          <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-12">Our Story</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1C1C1C]/10">
             {milestones.map((m) => (
-              <div key={m.year} style={{ background: "#F5F0E8" }} className="p-8">
-                <p className="font-display text-[#B8902A] font-medium mb-4" style={{ fontSize: "clamp(2.5rem,4vw,3.5rem)" }}>
+              <div key={m.year} style={{ background: "#FAFAFA" }} className="p-8">
+                <p className="font-display text-[#EA6B0E] font-medium mb-4" style={{ fontSize: "clamp(2.5rem,4vw,3.5rem)" }}>
                   {m.year}
                 </p>
-                <p className="text-[#0D1B2A] text-base leading-relaxed">{m.event}</p>
+                <p className="text-[#1C1C1C] text-base leading-relaxed">{m.event}</p>
               </div>
             ))}
           </div>
@@ -134,18 +134,18 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#0D1B2A]/10">
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#1C1C1C]/10">
         <div className="max-w-[1440px] mx-auto">
-          <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Leadership</p>
-          <h2 className="font-display text-[#0D1B2A] font-medium mb-14"
+          <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">Leadership</p>
+          <h2 className="font-display text-[#1C1C1C] font-medium mb-14"
             style={{ fontSize: "clamp(2rem,4vw,3.5rem)" }}>
             The people deploying the capital.
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[#0D1B2A]/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[#1C1C1C]/10">
             {team.map((t) => (
-              <div key={t.name} style={{ background: "#F5F0E8" }} className="group flex flex-col">
+              <div key={t.name} style={{ background: "#FAFAFA" }} className="group flex flex-col">
                 {/* Photo */}
-                <div className="relative aspect-[3/4] overflow-hidden bg-[#0D1B2A]/10">
+                <div className="relative aspect-[3/4] overflow-hidden bg-[#1C1C1C]/10">
                   <Image
                     src={t.photo}
                     alt={t.name}
@@ -155,10 +155,10 @@ export default function AboutPage() {
                 </div>
                 {/* Info */}
                 <div className="p-6 flex flex-col gap-1 flex-1">
-                  <p className="text-[#B8902A] text-xs font-bold tracking-[0.12em] uppercase">{t.tag}</p>
-                  <p className="font-display text-[#0D1B2A] text-xl font-medium">{t.name}</p>
-                  <p className="text-[#C8C4BC] text-xs mb-3">{t.title}</p>
-                  <p className="text-[#0D1B2A]/60 text-sm leading-relaxed">{t.bio}</p>
+                  <p className="text-[#EA6B0E] text-xs font-bold tracking-[0.12em] uppercase">{t.tag}</p>
+                  <p className="font-display text-[#1C1C1C] text-xl font-medium">{t.name}</p>
+                  <p className="text-[#AAAAAA] text-xs mb-3">{t.title}</p>
+                  <p className="text-[#1C1C1C]/60 text-sm leading-relaxed">{t.bio}</p>
                 </div>
               </div>
             ))}
@@ -167,7 +167,7 @@ export default function AboutPage() {
       </section>
 
       {/* Governance */}
-      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20" style={{ background: "#0D1B2A" }}>
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20" style={{ background: "#1C1C1C" }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — venue image */}
           <div className="relative aspect-[4/3] overflow-hidden">
@@ -180,12 +180,12 @@ export default function AboutPage() {
           </div>
           {/* Right — governance details */}
           <div>
-            <p className="text-[#B8902A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Governance</p>
+            <p className="text-[#EA6B0E] text-xs font-bold tracking-[0.2em] uppercase mb-5">Governance</p>
             <h2 className="font-display text-white font-medium leading-snug mb-6"
               style={{ fontSize: "clamp(1.8rem,3vw,3rem)" }}>
               Built to institutional standard.
             </h2>
-            <p className="text-[#C8C4BC] text-base leading-relaxed mb-8">
+            <p className="text-[#AAAAAA] text-base leading-relaxed mb-8">
               IFFAC is domiciled in Luxembourg as an Alternative Investment Fund (AIF),
               with Annan Capital Partners serving as investment advisor. Our ESG framework
               aligns with UN SDGs 8, 9, 10, and 17, meeting EU regulatory requirements.
@@ -199,7 +199,7 @@ export default function AboutPage() {
                 { label: "SDG alignment", value: "Goals 8, 9, 10, 17" },
               ].map((row) => (
                 <div key={row.label} className="flex justify-between py-4 border-b border-white/8">
-                  <span className="text-[#C8C4BC] text-sm">{row.label}</span>
+                  <span className="text-[#AAAAAA] text-sm">{row.label}</span>
                   <span className="text-white text-sm font-semibold">{row.value}</span>
                 </div>
               ))}
@@ -209,18 +209,18 @@ export default function AboutPage() {
       </section>
 
       {/* CTAs */}
-      <section className="py-16 px-6 md:px-12 lg:px-20" style={{ background: "#F5F0E8" }}>
+      <section className="py-16 px-6 md:px-12 lg:px-20" style={{ background: "#FAFAFA" }}>
         <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row gap-4">
           <Link href="/apply"
-            className="inline-flex items-center justify-center bg-[#0D1B2A] text-white text-sm font-bold px-8 py-4 hover:bg-[#162536] transition-colors">
+            className="inline-flex items-center justify-center bg-[#1C1C1C] text-white text-sm font-bold px-8 py-4 hover:bg-[#252525] transition-colors">
             Apply for funding →
           </Link>
           <Link href="/partners"
-            className="inline-flex items-center justify-center border border-[#0D1B2A] text-[#0D1B2A] text-sm font-semibold px-8 py-4 hover:bg-[#0D1B2A] hover:text-white transition-colors">
+            className="inline-flex items-center justify-center border border-[#1C1C1C] text-[#1C1C1C] text-sm font-semibold px-8 py-4 hover:bg-[#1C1C1C] hover:text-white transition-colors">
             Our partners
           </Link>
           <Link href="/investors"
-            className="inline-flex items-center justify-center border border-[#0D1B2A] text-[#0D1B2A] text-sm font-semibold px-8 py-4 hover:bg-[#0D1B2A] hover:text-white transition-colors">
+            className="inline-flex items-center justify-center border border-[#1C1C1C] text-[#1C1C1C] text-sm font-semibold px-8 py-4 hover:bg-[#1C1C1C] hover:text-white transition-colors">
             Investor overview
           </Link>
         </div>

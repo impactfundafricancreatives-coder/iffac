@@ -32,38 +32,38 @@ const events = [
 
 export default function CommunityPage() {
   return (
-    <div style={{ background: "#F5F0E8" }}>
+    <div style={{ background: "#FAFAFA" }}>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-28 px-6 md:px-12 lg:px-20" style={{ background: "#0D1B2A" }}>
+      <section className="pt-32 pb-20 md:pt-40 md:pb-28 px-6 md:px-12 lg:px-20" style={{ background: "#1C1C1C" }}>
         <div className="max-w-[1440px] mx-auto">
-          <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-6">Community</p>
+          <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-6">Community</p>
           <h1 className="font-display font-medium leading-[1.05] tracking-tight max-w-3xl mb-8 text-white"
             style={{ fontSize: "clamp(3rem,6vw,6rem)" }}>
             Join the most ambitious creative network in Africa.
           </h1>
-          <p className="text-[#C8C4BC] max-w-2xl mb-12" style={{ fontSize: "1.2rem", lineHeight: 1.7 }}>
+          <p className="text-[#AAAAAA] max-w-2xl mb-12" style={{ fontSize: "1.2rem", lineHeight: 1.7 }}>
             IFFAC is bigger than a fund, it&apos;s a movement. The Community gives you access
             to mentors, events, open calls, and a peer network of Africa&apos;s most driven
             creative entrepreneurs.
           </p>
           <a href="#join"
-            className="inline-flex items-center bg-[#B8902A] text-[#0D1B2A] text-sm font-bold px-9 py-4 hover:bg-[#D4A843] transition-colors">
+            className="inline-flex items-center bg-[#EA6B0E] text-[#1C1C1C] text-sm font-bold px-9 py-4 hover:bg-[#FF7A1A] transition-colors">
             Join the network →
           </a>
         </div>
       </section>
 
       {/* Benefits */}
-      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#0D1B2A]/10">
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#1C1C1C]/10">
         <div className="max-w-[1440px] mx-auto">
-          <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-12">What you get</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px" style={{ background: "rgba(13,27,42,0.1)" }}>
+          <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-12">What you get</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px" style={{ background: "rgba(28,28,28,0.1)" }}>
             {benefits.map((b) => (
-              <div key={b.title} style={{ background: "#F5F0E8" }} className="p-8 flex flex-col gap-4">
-                <span className="text-[#B8902A] text-3xl">{b.icon}</span>
-                <p className="font-display text-[#0D1B2A] text-xl font-medium">{b.title}</p>
-                <p className="text-[#0D1B2A]/60 text-sm leading-relaxed">{b.body}</p>
+              <div key={b.title} style={{ background: "#FAFAFA" }} className="p-8 flex flex-col gap-4">
+                <span className="text-[#EA6B0E] text-3xl">{b.icon}</span>
+                <p className="font-display text-[#1C1C1C] text-xl font-medium">{b.title}</p>
+                <p className="text-[#1C1C1C]/60 text-sm leading-relaxed">{b.body}</p>
               </div>
             ))}
           </div>
@@ -71,25 +71,25 @@ export default function CommunityPage() {
       </section>
 
       {/* Events */}
-      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#0D1B2A]/10">
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20 border-b border-[#1C1C1C]/10">
         <div className="max-w-[1440px] mx-auto">
-          <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-12">Upcoming Events</p>
-          <div className="flex flex-col gap-px" style={{ background: "rgba(13,27,42,0.1)" }}>
+          <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-12">Upcoming Events</p>
+          <div className="flex flex-col gap-px" style={{ background: "rgba(28,28,28,0.1)" }}>
             {events.map((e) => (
-              <div key={e.title} style={{ background: "#F5F0E8" }}
-                className="grid grid-cols-1 md:grid-cols-[180px_1fr_auto] gap-6 p-8 items-start group hover:bg-[#EDE7DA] transition-colors">
+              <div key={e.title} style={{ background: "#FAFAFA" }}
+                className="grid grid-cols-1 md:grid-cols-[180px_1fr_auto] gap-6 p-8 items-start group hover:bg-[#F0F0F0] transition-colors">
                 <div>
-                  <p className="text-[#0D1B2A] text-sm font-bold">{e.date}</p>
+                  <p className="text-[#1C1C1C] text-sm font-bold">{e.date}</p>
                   <span className="inline-block mt-1 text-[10px] font-bold tracking-widest uppercase border px-2 py-0.5"
-                    style={{ borderColor: e.type === "Online" ? "#8A9BB0" : "#B8902A", color: e.type === "Online" ? "#8A9BB0" : "#B8902A" }}>
+                    style={{ borderColor: e.type === "Online" ? "#888888" : "#EA6B0E", color: e.type === "Online" ? "#888888" : "#EA6B0E" }}>
                     {e.type}
                   </span>
                 </div>
                 <div>
-                  <p className="font-display text-[#0D1B2A] text-xl font-medium mb-2">{e.title}</p>
-                  <p className="text-[#0D1B2A]/60 text-sm leading-relaxed">{e.desc}</p>
+                  <p className="font-display text-[#1C1C1C] text-xl font-medium mb-2">{e.title}</p>
+                  <p className="text-[#1C1C1C]/60 text-sm leading-relaxed">{e.desc}</p>
                 </div>
-                <button className="text-xs font-bold text-[#B8902A] hover:text-[#D4A843] transition-colors whitespace-nowrap self-center">
+                <button className="text-xs font-bold text-[#EA6B0E] hover:text-[#FF7A1A] transition-colors whitespace-nowrap self-center">
                   Register →
                 </button>
               </div>
@@ -99,32 +99,32 @@ export default function CommunityPage() {
       </section>
 
       {/* Mentors */}
-      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20" style={{ background: "#EDE7DA" }}>
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-20" style={{ background: "#F0F0F0" }}>
         <div className="max-w-[1440px] mx-auto">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div>
-              <p className="text-[#C4581A] text-xs font-bold tracking-[0.2em] uppercase mb-5">Mentors Directory</p>
-              <h2 className="font-display text-[#0D1B2A] font-medium" style={{ fontSize: "clamp(2rem,4vw,3.5rem)" }}>
+              <p className="text-[#FFC200] text-xs font-bold tracking-[0.2em] uppercase mb-5">Mentors Directory</p>
+              <h2 className="font-display text-[#1C1C1C] font-medium" style={{ fontSize: "clamp(2rem,4vw,3.5rem)" }}>
                 The people in your corner.
               </h2>
             </div>
-            <p className="text-[#C8C4BC] text-sm max-w-xs">
+            <p className="text-[#AAAAAA] text-sm max-w-xs">
               Community members get access to 1:1 introductions with IFFAC mentors.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px" style={{ background: "rgba(13,27,42,0.1)" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px" style={{ background: "rgba(28,28,28,0.1)" }}>
             {mentors.map((m) => (
-              <div key={m.name} style={{ background: "#EDE7DA" }}
-                className="p-8 hover:bg-[#F5F0E8] transition-colors group">
-                <div className="w-12 h-12 rounded-full bg-[#0D1B2A] flex items-center justify-center mb-5">
+              <div key={m.name} style={{ background: "#F0F0F0" }}
+                className="p-8 hover:bg-[#FAFAFA] transition-colors group">
+                <div className="w-12 h-12 rounded-full bg-[#1C1C1C] flex items-center justify-center mb-5">
                   <span className="font-display text-white text-lg font-medium">{m.name.charAt(0)}</span>
                 </div>
-                <p className="font-display text-[#0D1B2A] text-lg font-medium mb-1">{m.name}</p>
-                <p className="text-[#C8C4BC] text-xs mb-4">{m.role} · {m.country}</p>
+                <p className="font-display text-[#1C1C1C] text-lg font-medium mb-1">{m.name}</p>
+                <p className="text-[#AAAAAA] text-xs mb-4">{m.role} · {m.country}</p>
                 <div className="flex flex-wrap gap-2">
                   {m.expertise.map((tag) => (
-                    <span key={tag} className="text-[10px] font-bold tracking-wide uppercase border border-[#0D1B2A]/20 px-2.5 py-1 text-[#0D1B2A]/60">
+                    <span key={tag} className="text-[10px] font-bold tracking-wide uppercase border border-[#1C1C1C]/20 px-2.5 py-1 text-[#1C1C1C]/60">
                       {tag}
                     </span>
                   ))}
@@ -136,21 +136,21 @@ export default function CommunityPage() {
       </section>
 
       {/* Join form */}
-      <section id="join" className="py-20 md:py-28 px-6 md:px-12 lg:px-20" style={{ background: "#0D1B2A" }}>
+      <section id="join" className="py-20 md:py-28 px-6 md:px-12 lg:px-20" style={{ background: "#1C1C1C" }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-[#B8902A] text-xs font-bold tracking-[0.2em] uppercase mb-6">Join the Community</p>
+            <p className="text-[#EA6B0E] text-xs font-bold tracking-[0.2em] uppercase mb-6">Join the Community</p>
             <h2 className="font-display font-medium text-white leading-snug mb-6"
               style={{ fontSize: "clamp(2rem,4vw,3.5rem)" }}>
               Not applying yet? You still belong here.
             </h2>
-            <p className="text-[#C8C4BC] text-lg leading-relaxed mb-5">
+            <p className="text-[#AAAAAA] text-lg leading-relaxed mb-5">
               Community membership is free and open, it&apos;s not a funding application.
               Join to access mentors, events, and early open-call alerts.
             </p>
-            <p className="text-[#C8C4BC] text-sm">
+            <p className="text-[#AAAAAA] text-sm">
               Already in our portfolio?{" "}
-              <Link href="/apply/portal" className="text-[#B8902A] hover:text-[#D4A843] underline underline-offset-2 transition-colors">
+              <Link href="/apply/portal" className="text-[#EA6B0E] hover:text-[#FF7A1A] underline underline-offset-2 transition-colors">
                 Access the alumni portal →
               </Link>
             </p>
@@ -160,12 +160,12 @@ export default function CommunityPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 md:px-12 lg:px-20" style={{ background: "#F5F0E8" }}>
+      <section className="py-16 px-6 md:px-12 lg:px-20" style={{ background: "#FAFAFA" }}>
         <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row gap-4">
-          <Link href="/apply" className="inline-flex items-center justify-center bg-[#0D1B2A] text-white text-sm font-bold px-8 py-4 hover:bg-[#162536] transition-colors">
+          <Link href="/apply" className="inline-flex items-center justify-center bg-[#1C1C1C] text-white text-sm font-bold px-8 py-4 hover:bg-[#252525] transition-colors">
             Apply for funding →
           </Link>
-          <Link href="/stories" className="inline-flex items-center justify-center border border-[#0D1B2A] text-[#0D1B2A] text-sm font-semibold px-8 py-4 hover:bg-[#0D1B2A] hover:text-white transition-colors">
+          <Link href="/stories" className="inline-flex items-center justify-center border border-[#1C1C1C] text-[#1C1C1C] text-sm font-semibold px-8 py-4 hover:bg-[#1C1C1C] hover:text-white transition-colors">
             Read the IFFAC Journal
           </Link>
         </div>
